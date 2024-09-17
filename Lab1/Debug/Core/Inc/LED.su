@@ -1,0 +1,5 @@
+LED.c:9:6:Exercise1	8	static
+LED.c:15:7:Exercise2	16	static
+LED.c:26:7:Exercise3	8	static
+LED.c:51:7:display7SEG	16	static
+LED.c:154:7:Exercise5	4	static
