@@ -115,8 +115,7 @@ int main(void)
   while (1)
   {
 	 Exercise2(num);
-	 HAL_Delay(100);
-	 num--;
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
