@@ -110,12 +110,12 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-   int num = 10;
+
 
   while (1)
   {
-	 Exercise2(num);
-	 num--;
+	 Exercise2();
+
 
     /* USER CODE END WHILE */
 

@@ -9,7 +9,7 @@
 #define INC_LED_H_
 #include "main.h"
 void Exercise1(void);
-void Exercise2(int num);
+void Exercise2(void);
 void Exercise3(void);
 void display7SEG(int num);
 void Exercise4();

@@ -12,14 +12,16 @@ void Exercise1(void){
 	HAL_GPIO_TogglePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin);
 }
 
-	void Exercise2(int num){
-		if(num > 5){
-		    HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, GPIO_PIN_RESET);
-		}
-		if(num <= 5 && num >2){
-			 HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, GPIO_PIN_SET);
-			 HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, GPIO_PIN_RESET);
-		}
+	void Exercise2(void){
+		HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
+		HAL_Delay(5000);
+		HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
+		HAL_GPIO_TogglePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin);
+		HAL_Delay(3000);
+		HAL_GPIO_TogglePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin);
+		HAL_GPIO_TogglePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin);
+		HAL_Delay(2000);
+		HAL_GPIO_TogglePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin);
 
 	}
 
