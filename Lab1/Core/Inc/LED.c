@@ -147,8 +147,14 @@ void Exercise1(void){
 			HAL_GPIO_WritePin(SEG_6_GPIO_Port, SEG_6_Pin, SET);
 		}
 	}
-	void Exercise5(void){
-
+	int Exercise4(int count){
+		if(count >= 10){
+			count = 0;
+		}
+		display7SEG(count);
+		HAL_Delay(1000);
+		count++;
+		return count;
 	}
 
 

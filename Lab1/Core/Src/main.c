@@ -111,11 +111,11 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-
+   int count = 0 ;
   while (1)
   {
-	 Exercise3();
-
+	Exercise4(count);
+	count++;
 
     /* USER CODE END WHILE */
 
