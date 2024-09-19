@@ -115,6 +115,7 @@ int main(void)
   while (1)
   {
 	 Exercise2(num);
+	 num--;
 
     /* USER CODE END WHILE */
 
