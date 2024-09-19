@@ -38,7 +38,7 @@ void Exercise1(void){
 		HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
 		HAL_Delay(3000);
 		HAL_GPIO_TogglePin(LED6_GPIO_Port, LED6_Pin);
-		HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
+		HAL_GPIO_TogglePin(LED5_GPIO_Port, LED5_Pin);
 		HAL_Delay(2000);
 		HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
 		HAL_GPIO_TogglePin(LED5_GPIO_Port, LED5_Pin);

@@ -114,7 +114,7 @@ int main(void)
 
   while (1)
   {
-	 Exercise2();
+	 Exercise3();
 
 
     /* USER CODE END WHILE */
