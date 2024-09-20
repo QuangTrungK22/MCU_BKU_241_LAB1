@@ -2,4 +2,9 @@ LED.c:9:6:Exercise1	8	static
 LED.c:15:7:Exercise2	8	static
 LED.c:28:7:Exercise3	8	static
 LED.c:47:7:display7SEG	16	static
-LED.c:150:6:Exercise4	16	static
+LED.c:143:6:Exercise4	16	static
+LED.c:152:7:display7Seg2	16	static
+LED.c:248:7:LEDREDX	16	static
+LED.c:285:7:LEDGREENX	16	static
+LED.c:307:7:LEDYELLOWX	16	static
+LED.c:324:7:Exercise5	8	static

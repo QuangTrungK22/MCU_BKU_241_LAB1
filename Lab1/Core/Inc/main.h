@@ -72,6 +72,12 @@ void Error_Handler(void);
 #define LED2_GPIO_Port GPIOB
 #define LED3_Pin GPIO_PIN_2
 #define LED3_GPIO_Port GPIOB
+#define Seg2_4_Pin GPIO_PIN_10
+#define Seg2_4_GPIO_Port GPIOB
+#define Seg2_5_Pin GPIO_PIN_11
+#define Seg2_5_GPIO_Port GPIOB
+#define Seg2_6_Pin GPIO_PIN_12
+#define Seg2_6_GPIO_Port GPIOB
 #define SEG_0_Pin GPIO_PIN_8
 #define SEG_0_GPIO_Port GPIOA
 #define SEG_1_Pin GPIO_PIN_9
@@ -92,6 +98,14 @@ void Error_Handler(void);
 #define LED5_GPIO_Port GPIOB
 #define LED6_Pin GPIO_PIN_5
 #define LED6_GPIO_Port GPIOB
+#define Seg2_0_Pin GPIO_PIN_6
+#define Seg2_0_GPIO_Port GPIOB
+#define Seg2_1_Pin GPIO_PIN_7
+#define Seg2_1_GPIO_Port GPIOB
+#define Seg2_2_Pin GPIO_PIN_8
+#define Seg2_2_GPIO_Port GPIOB
+#define Seg2_3_Pin GPIO_PIN_9
+#define Seg2_3_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

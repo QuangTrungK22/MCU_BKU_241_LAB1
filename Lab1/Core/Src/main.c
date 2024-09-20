@@ -89,12 +89,12 @@ int main(void)
   HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, SET);
   HAL_GPIO_WritePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin, SET);
   HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, SET);
-  HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, RESET);
-  HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, RESET);
-  HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, RESET);
-  HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, RESET);
-  HAL_GPIO_WritePin(LED5_GPIO_Port, LED5_Pin, RESET);
-  HAL_GPIO_WritePin(LED6_GPIO_Port, LED6_Pin, RESET);
+  HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(LED5_GPIO_Port, LED5_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(LED6_GPIO_Port, LED6_Pin, GPIO_PIN_RESET);
 
    HAL_GPIO_WritePin(SEG_0_GPIO_Port, SEG_0_Pin, SET);
    HAL_GPIO_WritePin(SEG_1_GPIO_Port, SEG_1_Pin, SET);
@@ -104,6 +104,15 @@ int main(void)
    HAL_GPIO_WritePin(SEG_5_GPIO_Port, SEG_5_Pin, SET);
    HAL_GPIO_WritePin(SEG_6_GPIO_Port, SEG_6_Pin, SET);
 
+   HAL_GPIO_WritePin(Seg2_0_GPIO_Port, Seg2_0_Pin, SET);
+   HAL_GPIO_WritePin(Seg2_1_GPIO_Port, Seg2_1_Pin, SET);
+   HAL_GPIO_WritePin(Seg2_2_GPIO_Port, Seg2_2_Pin, SET);
+   HAL_GPIO_WritePin(Seg2_3_GPIO_Port, Seg2_3_Pin, SET);
+   HAL_GPIO_WritePin(Seg2_4_GPIO_Port, Seg2_4_Pin, SET);
+   HAL_GPIO_WritePin(Seg2_5_GPIO_Port, Seg2_5_Pin, SET);
+   HAL_GPIO_WritePin(Seg2_6_GPIO_Port, Seg2_6_Pin, SET);
+   	   int counter1 = 6;
+   	   int counter2 = 4;
 
 
   /* USER CODE END 2 */
@@ -111,19 +120,18 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-   int count = 0 ;
   while (1)
   {
-	Exercise4(count);
-	count++;
-
+	  	  	  	Exercise5();
+	  	  	  	counter1--;
+	  	  	  	counter2--;
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
-}
 
+}
 /**
   * @brief System Clock Configuration
   * @retval None
@@ -178,8 +186,10 @@ static void MX_GPIO_Init(void)
                           |SEG_4_Pin|SEG_5_Pin|SEG_6_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, LED1_Pin|LED2_Pin|LED3_Pin|LED4_Pin
-                          |LED5_Pin|LED6_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, LED1_Pin|LED2_Pin|LED3_Pin|Seg2_4_Pin
+                          |Seg2_5_Pin|Seg2_6_Pin|LED4_Pin|LED5_Pin
+                          |LED6_Pin|Seg2_0_Pin|Seg2_1_Pin|Seg2_2_Pin
+                          |Seg2_3_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : LED_Pin LED_RED_Pin LED_YELLOW_Pin LED_GREEN_Pin
                            SEG_0_Pin SEG_1_Pin SEG_2_Pin SEG_3_Pin
@@ -192,10 +202,14 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : LED1_Pin LED2_Pin LED3_Pin LED4_Pin
-                           LED5_Pin LED6_Pin */
-  GPIO_InitStruct.Pin = LED1_Pin|LED2_Pin|LED3_Pin|LED4_Pin
-                          |LED5_Pin|LED6_Pin;
+  /*Configure GPIO pins : LED1_Pin LED2_Pin LED3_Pin Seg2_4_Pin
+                           Seg2_5_Pin Seg2_6_Pin LED4_Pin LED5_Pin
+                           LED6_Pin Seg2_0_Pin Seg2_1_Pin Seg2_2_Pin
+                           Seg2_3_Pin */
+  GPIO_InitStruct.Pin = LED1_Pin|LED2_Pin|LED3_Pin|Seg2_4_Pin
+                          |Seg2_5_Pin|Seg2_6_Pin|LED4_Pin|LED5_Pin
+                          |LED6_Pin|Seg2_0_Pin|Seg2_1_Pin|Seg2_2_Pin
+                          |Seg2_3_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

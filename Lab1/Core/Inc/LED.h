@@ -13,4 +13,9 @@ void Exercise2(void);
 void Exercise3(void);
 void display7SEG(int num);
 int Exercise4(int count);
+void display7Seg2(int x);
+void LEDREDX(void);
+void LEDGREENX(void);
+void LEDYELLOWX(void);
+void Exercise5(void);
 #endif /* INC_LED_H_ */
