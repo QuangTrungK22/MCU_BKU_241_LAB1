@@ -5,13 +5,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Core/Inc/LED.c 
+../Core/Inc/LED.c \
+../Core/Inc/Software_timer1.c 
 
 OBJS += \
-./Core/Inc/LED.o 
+./Core/Inc/LED.o \
+./Core/Inc/Software_timer1.o 
 
 C_DEPS += \
-./Core/Inc/LED.d 
+./Core/Inc/LED.d \
+./Core/Inc/Software_timer1.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
