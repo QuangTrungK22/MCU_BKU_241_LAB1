@@ -116,14 +116,16 @@ int main(void)
    HAL_GPIO_WritePin(Seg2_5_GPIO_Port, Seg2_5_Pin, SET);
    HAL_GPIO_WritePin(Seg2_6_GPIO_Port, Seg2_6_Pin, SET);
 
-   HAL_TIM_Base_Start(&htim2);
-   int counter1 ;
-   int counter2 ;
 
+   int counter1 = 6;
+   int counter2 = 4;
+   int count = 0 ;
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+   	  int counter1 = 6;
+      int counter2 = 4;
 
   while (1)
   {
