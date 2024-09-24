@@ -13,4 +13,5 @@ void Exercise2(int num);
 void Exercise3(void);
 void display7SEG(int num);
 void Exercise4();
+int Exercise8(int counter);
 #endif /* INC_LED_H_ */

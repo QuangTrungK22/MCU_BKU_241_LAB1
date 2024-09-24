@@ -110,13 +110,12 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-   int num = 10;
+   int counter = 0 ;
 
   while (1)
   {
-	 Exercise2(num);
-	 HAL_Delay(1000);
-	 num--;
+	counter = Exercise8(counter);
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
