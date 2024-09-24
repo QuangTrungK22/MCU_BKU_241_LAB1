@@ -12,3 +12,5 @@ LED.c:329:7:Clock	16	static
 LED.c:367:6:Exercise6	16	static
 LED.c:377:7:setNumberOnClock	16	static
 LED.c:415:6:Exercise8	16	static
+LED.c:422:7:ClearNumberOnClock	16	static
+LED.c:460:7:Exercise9	16	static
