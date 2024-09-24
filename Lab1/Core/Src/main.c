@@ -122,9 +122,7 @@ int main(void)
 
   while (1)
   {
-	  	  	  	Exercise5();
-	  	  	  	counter1--;
-	  	  	  	counter2--;
+	  	  	  	Exercise3();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
