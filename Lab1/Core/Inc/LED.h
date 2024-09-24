@@ -19,4 +19,5 @@ void LEDGREENX(void);
 void LEDYELLOWX(void);
 void Exercise5(void);
 int Exercise6(int counter);
+void Exercise7(void);
 #endif /* INC_LED_H_ */

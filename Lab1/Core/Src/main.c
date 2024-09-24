@@ -120,11 +120,11 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-   int counter = 0;
+
   while (1)
   {
 
-	   counter = Exercise6(counter);
+	   Exercise7();
 
 
 	  	  	}

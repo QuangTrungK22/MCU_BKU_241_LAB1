@@ -10,3 +10,6 @@ LED.c:307:7:LEDYELLOWX	16	static
 LED.c:324:7:Exercise5	8	static
 LED.c:329:7:Clock	16	static
 LED.c:367:6:Exercise6	16	static
+LED.c:376:7:clearAllClock	8	static
+LED.c:390:7:TurnOnAllLed	8	static
+LED.c:404:7:Exercise7	8	static
