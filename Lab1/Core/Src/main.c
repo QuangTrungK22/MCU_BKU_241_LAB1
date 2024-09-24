@@ -97,21 +97,25 @@ int main(void)
   HAL_GPIO_WritePin(LED5_GPIO_Port, LED5_Pin, GPIO_PIN_RESET);
   HAL_GPIO_WritePin(LED6_GPIO_Port, LED6_Pin, GPIO_PIN_RESET);
 
-   HAL_GPIO_WritePin(SEG_0_GPIO_Port, SEG_0_Pin, SET);
-   HAL_GPIO_WritePin(SEG_1_GPIO_Port, SEG_1_Pin, SET);
-   HAL_GPIO_WritePin(SEG_2_GPIO_Port, SEG_2_Pin, SET);
-   HAL_GPIO_WritePin(SEG_3_GPIO_Port, SEG_3_Pin, SET);
-   HAL_GPIO_WritePin(SEG_4_GPIO_Port, SEG_4_Pin, SET);
-   HAL_GPIO_WritePin(SEG_5_GPIO_Port, SEG_5_Pin, SET);
-   HAL_GPIO_WritePin(SEG_6_GPIO_Port, SEG_6_Pin, SET);
+   HAL_GPIO_WritePin(SEG_0_GPIO_Port, SEG_0_Pin, RESET);
+   HAL_GPIO_WritePin(SEG_1_GPIO_Port, SEG_1_Pin, RESET);
+   HAL_GPIO_WritePin(SEG_2_GPIO_Port, SEG_2_Pin, RESET);
+   HAL_GPIO_WritePin(SEG_3_GPIO_Port, SEG_3_Pin, RESET);
+   HAL_GPIO_WritePin(SEG_4_GPIO_Port, SEG_4_Pin, RESET);
+   HAL_GPIO_WritePin(SEG_5_GPIO_Port, SEG_5_Pin, RESET);
+   HAL_GPIO_WritePin(SEG_6_GPIO_Port, SEG_6_Pin, RESET);
 
-   HAL_GPIO_WritePin(Seg2_0_GPIO_Port, Seg2_0_Pin, SET);
-   HAL_GPIO_WritePin(Seg2_1_GPIO_Port, Seg2_1_Pin, SET);
-   HAL_GPIO_WritePin(Seg2_2_GPIO_Port, Seg2_2_Pin, SET);
-   HAL_GPIO_WritePin(Seg2_3_GPIO_Port, Seg2_3_Pin, SET);
-   HAL_GPIO_WritePin(Seg2_4_GPIO_Port, Seg2_4_Pin, SET);
-   HAL_GPIO_WritePin(Seg2_5_GPIO_Port, Seg2_5_Pin, SET);
-   HAL_GPIO_WritePin(Seg2_6_GPIO_Port, Seg2_6_Pin, SET);
+   HAL_GPIO_WritePin(Seg2_0_GPIO_Port, Seg2_0_Pin, RESET);
+   HAL_GPIO_WritePin(Seg2_1_GPIO_Port, Seg2_1_Pin, RESET);
+   HAL_GPIO_WritePin(Seg2_2_GPIO_Port, Seg2_2_Pin, RESET);
+   HAL_GPIO_WritePin(Seg2_3_GPIO_Port, Seg2_3_Pin, RESET);
+   HAL_GPIO_WritePin(Seg2_4_GPIO_Port, Seg2_4_Pin, RESET);
+   HAL_GPIO_WritePin(Seg2_5_GPIO_Port, Seg2_5_Pin, RESET);
+   HAL_GPIO_WritePin(Seg2_6_GPIO_Port, Seg2_6_Pin, RESET);
+   int counter = 0 ;
+   int sec = 0 ;
+   int min = 0 ;
+   int hour = 0 ;
 
 
 
@@ -120,13 +124,41 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-   int num = 0;
+
   while (1)
   {
-
-	   num = Exercise9(num);
-
-
+	  if(counter >= 5){
+		  counter = 0;
+		  sec++;
+		  Exercise10(sec);
+	  }
+	  if(sec >= 12){
+		  sec = 0 ;
+		  min++;
+		  Exercise10(min);
+	  }
+	  	  setNumberOnClock(sec);
+	  if(min >= 60){
+		  min = 0;
+		  hour++;
+		  Exercise10(hour);
+	  }
+	  if(min != 0){
+		  int num = min/5 -1;
+		  setNumberOnClock(num);
+		  if(min == 0){
+		  		int num = min/5;
+		  		setNumberOnClock(num);
+		  	}
+	  }
+	  if(hour >= 12){
+		  hour = 0 ;
+		  Exercise10(hour);
+	  }
+	  setNumberOnClock(hour);
+	  if(counter >= 5) counter = 0;
+	  HAL_Delay(1000);
+	  counter++;
 	  	  	}
     /* USER CODE END WHILE */
 

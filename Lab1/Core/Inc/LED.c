@@ -464,3 +464,11 @@ void Exercise1(void){
 			num++;
 			return num;
 		}
+		void Exercise10(int num){
+			if(num == 0){
+				ClearNumberOnClock(11);
+			}
+			else{
+				ClearNumberOnClock(num-1);
+				}
+		}

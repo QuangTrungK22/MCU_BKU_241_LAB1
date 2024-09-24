@@ -21,4 +21,5 @@ void Exercise5(void);
 int Exercise6(int counter);
 int Exercise8(int num);
 int Exercise9(int num);
+void Exercise10(int num);
 #endif /* INC_LED_H_ */
