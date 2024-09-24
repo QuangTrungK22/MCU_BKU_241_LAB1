@@ -374,4 +374,49 @@ void Exercise1(void){
 		return counter;
 	}
 
+	void setNumberOnClock(int num){
+		if(num == 0){
+				HAL_GPIO_WritePin(SEG_0_GPIO_Port, SEG_0_Pin, SET);
+			}
+			if(num == 1){
+				HAL_GPIO_WritePin(SEG_1_GPIO_Port, SEG_1_Pin, SET);
+			}
+			if(num == 2){
+				HAL_GPIO_WritePin(SEG_2_GPIO_Port, SEG_2_Pin, SET);
+			}
+			if(num == 3){
+				HAL_GPIO_WritePin(SEG_3_GPIO_Port, SEG_3_Pin, SET);
+			}
+			if(num == 4){
+				HAL_GPIO_WritePin(SEG_4_GPIO_Port, SEG_4_Pin, SET);
+			}
+			if(num == 5){
+				HAL_GPIO_WritePin(SEG_5_GPIO_Port, SEG_5_Pin, SET);
+			}
+			if(num == 6){
+				HAL_GPIO_WritePin(SEG_6_GPIO_Port, SEG_6_Pin, SET);
+			}
+			if(num == 7){
+				HAL_GPIO_WritePin(Seg2_0_GPIO_Port, Seg2_0_Pin, SET);
+			}
+			if(num == 8){
+				HAL_GPIO_WritePin(Seg2_1_GPIO_Port, Seg2_1_Pin, SET);
+			}
+			if(num == 9){
+				HAL_GPIO_WritePin(Seg2_2_GPIO_Port, Seg2_2_Pin, SET);
+			}
+			if(num == 10){
+				HAL_GPIO_WritePin(Seg2_3_GPIO_Port, Seg2_3_Pin, SET);
+			}
+			if(num == 11){
+				HAL_GPIO_WritePin(Seg2_4_GPIO_Port, Seg2_4_Pin, SET);
+			}
+	}
+	int Exercise8(int num){
+		if(num >= 12) num = 0;
+		setNumberOnClock(num);
+		HAL_Delay(1000);
+		num++;
+		return num;
+	}
 
