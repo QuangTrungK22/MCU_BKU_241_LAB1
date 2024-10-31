@@ -1,9 +1,39 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
   <diagram name="Page-1" id="S3aeuHsBQ-bwIg22HUG-">
-    <mxGraphModel>
+    <mxGraphModel dx="836" dy="806" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="P8UCcyifI1CdkzVeKy4B-1" value="Nhận diện&lt;br&gt;Khách hàng tiềm năng Học sinh sinh viên , Nhân viên văn phòng" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="130" width="520" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="P8UCcyifI1CdkzVeKy4B-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="P8UCcyifI1CdkzVeKy4B-2" target="P8UCcyifI1CdkzVeKy4B-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P8UCcyifI1CdkzVeKy4B-2" value="#2 Xem xét:&lt;div&gt;Người có biết về sản phẩm: cần các chiến dịch truyền thông&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="190" width="420" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="P8UCcyifI1CdkzVeKy4B-3" value="#3Tương tác&amp;nbsp;&lt;div&gt;Người quan tâm đến sản phẩm&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="250" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="P8UCcyifI1CdkzVeKy4B-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.05;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="P8UCcyifI1CdkzVeKy4B-2" target="P8UCcyifI1CdkzVeKy4B-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P8UCcyifI1CdkzVeKy4B-6" value="#4Dự đinh mua&lt;br&gt;Khách hàng triển vọng: Học sinh sinh viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="310" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="P8UCcyifI1CdkzVeKy4B-8" value="" style="shape=or;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="460" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="P8UCcyifI1CdkzVeKy4B-11" value="#5 Mua hàng&lt;div&gt;Khách hàng thực sự Phụ huynh học sinh hoặc sinh viên nv văn phòng&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="370" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="P8UCcyifI1CdkzVeKy4B-12" value="#6 Trung bình&lt;div&gt;Khách hàng đã thỏa mãn&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="P8UCcyifI1CdkzVeKy4B-13" value="#7 Ủng hộ&lt;div&gt;Người truyền bán sản phẩm&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="490" width="70" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
